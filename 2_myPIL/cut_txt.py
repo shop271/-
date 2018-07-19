@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 import io
+import os
 
 #识别被切的那个字节是否是汉字
 #汉字占用3个字节切到汉字会导致文件乱码
@@ -50,4 +51,4 @@ def SplitCount(file_name, count):
 if __name__ == '__main__':
   file_name = raw_input('input file_name:')
   count = raw_input('input cut count:')
-  splitCount(filename,int(count)) 
+  SplitCount(file_name,int(count)) 
